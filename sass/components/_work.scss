@@ -1,0 +1,49 @@
+.work {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.work__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding-top: 0;
+  margin-bottom: 50px;
+}
+.work__card-set {
+  display: flex;
+}
+
+.work__card {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.work__about-box {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 4px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+.work__about {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $tertiary-text-color;
+}

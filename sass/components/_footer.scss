@@ -1,0 +1,134 @@
+.footer {
+  background-color: $secondary-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: flex;
+}
+.footer-meta__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $tertiary-text-color;
+}
+.footer-meta-map__link {
+  color: $tertiary-text-color;
+}
+.footer-meta__contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-meta__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+.join__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+
+  margin-bottom: 20px;
+}
+.join {
+  margin-left: 70px;
+}
+.join-social__link {
+  background-color: #44454e;
+}
+.join-social__link {
+  fill: $tertiary-text-color;
+}
+.mailing-form__container {
+  display: flex;
+  flex-direction: column;
+}
+.mailing-form {
+  display: flex;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+
+  align-items: flex-end;
+}
+.mailing-form__label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+  margin-bottom: 20px;
+}
+.mailing-form__input {
+  width: 358px;
+  background-color: $secondary-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  color: $tertiary-text-color;
+  outline: none;
+
+  transition: border-color 250ms linear;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .mailing-form &:hover,
+  .mailing-form &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.mailing-btn__body {
+  border: none;
+  width: 200px;
+  height: 50px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $tertiary-text-color;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 0;
+  margin-left: 12px;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+.mailing-btn {
+  position: relative;
+}
+.mailing-btn__icon {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  transform: translateY(50%);
+  fill: $tertiary-text-color;
+}

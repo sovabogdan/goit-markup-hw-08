@@ -1,0 +1,28 @@
+/* Logo header*/
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000;
+
+  margin-right: 93px;
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+.logo__web {
+  color: $accent-color;
+}
+
+/*Footer logo*/
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__logo {
+  padding: 0;
+}
+.footer-logo__studio {
+  color: $tertiary-text-color;
+}
