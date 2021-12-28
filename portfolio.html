@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Шапка сайта-->
-<header class="header">
+<!-- <header class="header">
     <div class="container header-container">
         <nav class="nav">
             <a href="./index.html" class="logo header__logo">
@@ -48,7 +48,7 @@
             </ul>
         </div>
     </div>
-</header>
+</header> -->
     <!--Основной контент-->
     <main>
         <section class="section">
@@ -67,8 +67,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio1.jpg" alt="ноутбук с открытой страницей сайта" width="370" />
-                   
+                        <picture>
+                            <source srcset="
+                                            ./images/portfolio1.jpg    1x,
+                                            ./images/portfolio1@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/portfolio1-tab.jpg 1x,
+                                            ./images/portfolio1-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/portfolio1-mob.jpg 1x,
+                                            ./images/portfolio1-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio1.jpg" alt="ноутбук с открытой страницей сайта"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -84,8 +94,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio2.jpg" alt="два баскетболиста во время игры" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                            ./images/portfolio2.jpg    1x,
+                                            ./images/portfolio2@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/portfolio2-tab.jpg 1x,
+                                            ./images/portfolio2-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/portfolio2-mob.jpg 1x,
+                                            ./images/portfolio2-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio2.jpg" alt="два баскетболиста во время игры" />
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -100,8 +120,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio3.jpg" alt="логотип ресторана" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                            ./images/portfolio3.jpg    1x,
+                                            ./images/portfolio3@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/portfolio3-tab.jpg 1x,
+                                            ./images/portfolio3-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/portfolio3-mob.jpg 1x,
+                                            ./images/portfolio3-mob@2x.jpg 2x" media="(min-width:320px)"/>
+                    <img src="./images/portfolio3.jpg" alt="логотип ресторана"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -116,8 +146,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio4.jpg" alt="наушники" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                ./images/portfolio4.jpg    1x,
+                                ./images/portfolio4@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                ./images/portfolio4-tab.jpg 1x,
+                                ./images/portfolio4-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                ./images/portfolio4-mob.jpg 1x,
+                                ./images/portfolio4-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio4.jpg" alt="наушники"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -132,8 +172,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio5.jpg" alt="две коробки" width="370" />
-                
+                        <picture>
+                            <source srcset="
+            ./images/portfolio5.jpg    1x,
+            ./images/portfolio5@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+            ./images/portfolio5-tab.jpg 1x,
+            ./images/portfolio5-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+            ./images/portfolio5-mob.jpg 1x,
+            ./images/portfolio5-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio5.jpg" alt="две коробки"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -148,8 +198,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio6.jpg" alt="монитор компьютера с открытой страницей сайта" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                    ./images/portfolio6.jpg    1x,
+                                    ./images/portfolio6@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                    ./images/portfolio6-tab.jpg 1x,
+                                    ./images/portfolio6-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                    ./images/portfolio6-mob.jpg 1x,
+                                    ./images/portfolio6-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio6.jpg" alt="монитор компьютера с открытой страницей сайта"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -164,8 +224,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio7.jpg" alt="открытая книга" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                    ./images/portfolio7.jpg    1x,
+                                    ./images/portfolio7@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                    ./images/portfolio7-tab.jpg 1x,
+                                    ./images/portfolio7-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                    ./images/portfolio7-mob.jpg 1x,
+                                    ./images/portfolio7-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio7.jpg" alt="открытая книга"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -180,8 +250,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio8.jpg" alt="бирка с надписью" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                    ./images/portfolio8.jpg    1x,
+                                    ./images/portfolio8@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                    ./images/portfolio8-tab.jpg 1x,
+                                    ./images/portfolio8-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                    ./images/portfolio8-mob.jpg 1x,
+                                    ./images/portfolio8-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio8.jpg" alt="бирка с надписью"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -196,8 +276,18 @@
             <li class="exmpls__card">
                 <a href="" class="exmpls__link">
                     <div class="exmpls__photo">
-                    <img src="./images/portfolio9.jpg" alt="работа на ноутбуке" width="370" />
-                
+                        <picture>
+                            <source srcset="
+                                    ./images/portfolio9.jpg    1x,
+                                    ./images/portfolio9@2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                                    ./images/portfolio9-tab.jpg 1x,
+                                    ./images/portfolio9-tab@2x.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="
+                                    ./images/portfolio9-mob.jpg 1x,
+                                    ./images/portfolio9-mob@2x.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/portfolio9.jpg" alt="работа на ноутбуке"/>
+                        </picture>
                         <p class="exmpls__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione. Soluta quod nostrum atque debitis rerum, porro vel!</p>
                     
                     </div>
@@ -217,70 +307,65 @@
     <!--Футер-->
 <footer class="footer">
     <div class="container footer__container">
-        <div>
-            <a href="./index.html" class="logo footer__logo">
-                <span class="logo__web" lang="en">Web</span><span lang="en"
-                    class="logo__studio footer-logo__studio">Studio</span>
-            </a>
-            <ul class="footer-meta__list">
-                <li>
-                    <address class="footer-meta__item footer-meta__address"><a class="footer-meta-map__link"
-                            href="https://goo.gl/maps/mbySBSFmMzTaM3LG6" target="_blank">г. Киев, пр-т Леси Украинки,
-                            26</a></address>
-                </li>
-                <li><a href="mailto:info@devstudio.com"
-                        class="footer-meta__item footer-meta__contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="footer-meta__item footer-meta__contacts">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
-        <div class="join">
-            <h2 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-            <ul class="social__list list">
-                <li class="social__item">
-                    <a href="" class="social__link join-social__link">
-                        <svg class="social__icon join-social__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="" class="social__link join-social__link">
-                        <svg class="social__icon c" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg></a>
-                </li>
-                <li class="social__item">
-                    <a href="" class="social__link join-social__link">
-                        <svg class="social__icon join-social__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg></a>
-                </li>
-                <li class="social__item">
-                    <a href="" class="social__link join-social__link">
-                        <svg class="social__icon join-social__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg></a>
-                </li>
-            </ul>
-        </div>
-
-        <form class="mailing-form">
-            <div class="mailing-form__container">
-                <label class="mailing-form__label" for="mailing">подпишитесь на рассылку</label>
-                <input class="mailing-form__input" type="email" name="email" id="mailing" placeholder="E-mail">
+        <div class="footer-main-box">
+        <div class="footer-box-meta">
+    <a href="./index.html" class="logo footer__logo">
+        <span class="logo__web" lang="en">Web</span><span lang="en" class="logo__studio footer-logo__studio">Studio</span>
+    </a>
+    <ul class="footer-meta__list">
+        <li class="footer-meta__item"><address class="footer-meta__address"><a class="footer-meta-map__link" href="https://goo.gl/maps/mbySBSFmMzTaM3LG6" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></address></li>
+        <li class="footer-meta__item"><a href="mailto:info@devstudio.com" class="footer-meta__contacts">info@devstudio.com</a></li>
+        <li class="footer-meta__item"><a href="tel:+380961111111" class="footer-meta__contacts">+38 096 111 11 11</a></li>
+    </ul>
+    </div>
+    <div class="join">
+        <h2 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="social__list list">
+            <li class="social__item">
+                <a href="" class="social__link join-social__link">
+                    <svg class="social__icon join-social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link join-social__link">
+                    <svg class="social__icon c" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link join-social__link">
+                    <svg class="social__icon join-social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link join-social__link">
+                    <svg class="social__icon join-social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+       <form class="mailing-form">
+           <div class="mailing-form__container">
+               <label class="mailing-form__label" for="mailing">подпишитесь на рассылку</label>
+               <input class="mailing-form__input" type="email" name="email" id="mailing" placeholder="E-mail">
+           </div>
+           <div class="mailing-btn">
+            <button type="submit" class="mailing-btn__body">
+                Подписаться
+            </button>
+            <svg class="mailing-btn__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+            </svg>
             </div>
-            <div class="mailing-btn">
-                <button type="submit" class="mailing-btn__body">
-                    Подписаться
-                </button>
-                <svg class="mailing-btn__icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-airplane"></use>
-                </svg>
-            </div>
-
-        </form>
-
+          
+       </form>
+    
     </div>
 </footer>
     

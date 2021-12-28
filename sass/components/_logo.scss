@@ -3,13 +3,18 @@
   display: block;
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000;
 
   margin-right: 93px;
   padding-top: 32px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__web {
   color: $accent-color;
@@ -19,9 +24,15 @@
 .footer__logo {
   display: block;
   margin-bottom: 20px;
-}
-.footer__logo {
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 .footer-logo__studio {
   color: $tertiary-text-color;
