@@ -330,6 +330,7 @@ li {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -346,9 +347,12 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 581px;
-  min-width: 528px;
-  padding: 0px;
+  width: 450px;
+  height: 609px;
+  padding-top: 40px;
+  padding-right: 39px;
+  padding-bottom: 40px;
+  padding-left: 41px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -359,6 +363,13 @@ li {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .close-btn {
@@ -395,12 +406,12 @@ li {
 }
 
 .title-modal {
-  padding-top: 40px;
   margin-bottom: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1, 5;
+  /* line-height: 1.15; */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -414,7 +425,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 448px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -692,10 +703,15 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 12px;
-  padding-left: 11px;
   margin-bottom: 30px;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-field {
+    padding-right: 12px;
+    padding-left: 11px;
+  }
 }
 
 .checkbox {
@@ -733,10 +749,17 @@ li {
 .label-checkbox {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agree-link {
@@ -1575,6 +1598,9 @@ li {
 }
 
 .exmpls__meta {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
@@ -1596,6 +1622,14 @@ li {
 }
 
 .exmpls__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   width: 100%;
   display: inline-block;
   border: 1px solid #eeeeee;
