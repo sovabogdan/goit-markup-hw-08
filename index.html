@@ -28,7 +28,15 @@
             <span class="logo__web" lang="en">Web</span
             ><span lang="en" class="logo__studio">Studio</span>
           </a>
-
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="activ-page site-nav__link" href="./index.html"
@@ -42,17 +50,11 @@
               <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <div class="header__contacts">
           <ul class="contacts">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com">
                 <svg class="contacts__icon">
-                  <use
-                    href="./images/icons.svg#icon-mail"
-                    width="16"
-                    height="16"
-                  ></use>
+                  <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -60,17 +62,56 @@
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+380961111111">
                 <svg class="contacts__icon">
-                  <use
-                    href="./images/icons.svg#icon-phone"
-                    width="16"
-                    height="16"
-                  ></use>
+                  <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mob-menu__site-nav">
+          <li class="site-nav__item">
+            <a class="activ-page site-nav__link" href="./index.html">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-menu__social">
+          <li class="mob-menu-soc__item" lang="en"><a href="">Instagram</a></li>
+          <li class="mob-menu-soc__item" lang="en"><a href=""></a>Twitter</li>
+          <li class="mob-menu-soc__item" lang="en"><a href=""></a>Facebook</li>
+          <li class="mob-menu-soc__item" lang="en"><a href=""></a>Linkedin</li>
+        </ul>
       </div>
     </header>
     <!--Основной контент-->
@@ -650,6 +691,8 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -657,6 +700,5 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
