@@ -96,9 +96,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,7 +116,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -139,6 +136,13 @@ li {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -173,6 +177,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    /* margin-right: 305px; */
+  }
+}
+
 .site-nav__link {
   font-weight: 500;
   font-size: 14px;
@@ -203,14 +213,18 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: auto;
   }
 }
 
@@ -294,7 +308,7 @@ li {
 }
 
 .mob-menu__site-nav {
-  margin-bottom: 302px;
+  /*  margin-bottom: 302px; */
 }
 
 .mob-menu-site-nav__item:not(:last-child) {
@@ -335,6 +349,7 @@ li {
 }
 
 .mob-menu__contacts {
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -384,6 +399,7 @@ li {
   .logo {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 
@@ -393,6 +409,7 @@ li {
     line-height: 1.19;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 
@@ -437,31 +454,43 @@ li {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-bg-mob@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg-mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mob@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero-bg-tab.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tab.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-bg-tab@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg-tab@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tab@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-bg@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg@2x.jpg");
   }
 }
 
@@ -989,6 +1018,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__list {
+    margin-bottom: 30px;
+  }
+}
+
 .features__about {
   font-size: 14px;
   line-height: 1.71;
@@ -1054,6 +1089,7 @@ li {
 
 .work {
   padding-top: 0;
+  padding-bottom: 116px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1111,6 +1147,13 @@ li {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 116px;
+    padding-top: 72px;
+  }
+}
+
 .team__title {
   font-weight: bold;
   font-size: 28px;
@@ -1140,6 +1183,12 @@ li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin-bottom: 0;
   }
 }
 
@@ -1238,6 +1287,12 @@ li {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 72px;
+  }
+}
+
 .client__title {
   font-weight: bold;
   font-size: 28px;
@@ -1245,11 +1300,12 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .client__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
@@ -1268,11 +1324,17 @@ li {
   margin-left: -30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .client__list {
+    margin-bottom: 0;
+  }
+}
+
 .client__item {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 320 px) {
+@media screen and (min-width: 320px) {
   .client__item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
